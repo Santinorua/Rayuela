@@ -9,7 +9,7 @@ let cuento;
 for(let i=0; i<orden.length; i++){
 let parrafo = String(fs.readFileSync(`Cuento/parte${orden[i]}.txt`));
 if(cuento){
-cuento = cuento + "\n" + parrafo;
+cuento = cuento + "\r\n" + parrafo;
 }
 else{
     cuento = parrafo
